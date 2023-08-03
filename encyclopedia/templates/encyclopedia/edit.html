@@ -1,0 +1,28 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}Edit{% endblock %}
+
+{% block body %}
+  <h1>Edit Page: {{title}} </h1>
+  <div>
+   {%if message%}
+     <div>
+      {{message}}
+     </div>
+   {%endif%}
+   <form method="POST">
+     {% csrf_token%}
+     <div >
+       <div>
+         <label for="content">Content:</label>
+         <br/>       
+         <textarea rows="4" cols="50" name="content" placeholder="Write page content here...">
+           {%if content%}{{content}}{%endif%}
+         </textarea>
+       </div>
+       <input type="submit" value="Save"  />
+     </div>
+    </form>
+  </div>
+{% endblock %}
+
