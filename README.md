@@ -31,7 +31,7 @@ The demo video:https://youtu.be/2QnT3tXxk6c
 ## Installation and Setup
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.13.3
 - pip (Python package manager)
 
 ### Steps
