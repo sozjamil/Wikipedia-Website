@@ -2,6 +2,7 @@
 
 A simple Wikipedia-like encyclopedia web application built with Django.
 
+![Screenshot](images/wiki.png)
 
 ## Features
 
